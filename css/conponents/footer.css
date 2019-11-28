@@ -1,0 +1,19 @@
+.p-style{
+    text-align: left;
+    color: #ffffff;
+}
+.p-style a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.p-style a:hover{
+    color: #be0108;
+}
+.xs-p-style{
+    text-align: center;
+    color: #ffffff;
+}
+.xs-p-style a{
+    text-decoration: none;
+    color: #be0108;
+}

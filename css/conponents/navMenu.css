@@ -1,0 +1,71 @@
+.cu-nav{
+    /* 设置导航菜单 */
+    background: #be0108;
+    text-align: center;
+}
+.cu-menu{
+    /* 清除ul默认样式 */
+    /* ul是块级元素 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    zoom: 1;
+}
+/* 父元素清除浮动 */
+.cu-menu::after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.cu-menu-item{
+    /* 设置浮动，让水平显示，设置浮动后会变成内联元素 */
+    /* 设置浮动后父边距会崩塌，特别是没有设置height和width,所以父元素要清除浮动 */
+    float: left;
+    padding: 10px;
+    display: block;
+    position: relative;
+}
+/* 清除超链接的样式 */
+.cu-menu-item a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+}
+/* 设置鼠标悬停效果 */
+.cu-menu-item:hover{
+    background: red;
+    transition: .3s;
+}
+.cu-menu-item:hover .cu-dropdown-menu{
+    display: block;
+}
+/* 设置下拉子菜单样式 */
+.cu-dropdown-menu{
+    margin-top: 10px;
+    /* 设置为绝对定位 */
+    position: absolute;
+    display: none;
+    color: #ffffff;
+    background: #FFFFFF;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+.cu-dropdown-menu p{
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    margin-top: 1px;
+    background: red;
+}
+/* 子选项鼠标悬停 */
+.cu-dropdown-menu p:hover{
+    background: #be0108;
+    transition: .3s;
+}

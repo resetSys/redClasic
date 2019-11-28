@@ -1,0 +1,24 @@
+/* 设置滚动条的整体部分 */
+.scroll::-webkit-scrollbar{
+
+}
+/* 设置滚动条的滑块 */
+.scroll::-webkit-scrollbar-thumb{
+    
+}
+/* 设置滚动条两端的按钮 */
+.scroll::-webkit-scrollbar-button{
+
+}
+/* 设置外层轨道 */
+.scroll::-webkit-scrollbar-track{
+
+}
+/* 设置内层滚动槽 */
+.scroll::-webkit-scrollbar-track-piece{
+
+}
+/* 设置边角 */
+.scroll::-webkit-scrollbar-corner{
+
+}
