@@ -18,7 +18,7 @@ function move() {
     ul.style.left = ul.offsetLeft + speed + 'px';
 }
 
-var timer = setInterval(move, 20);
+let timer = setInterval(move, 30);
 
 box.onmouseover = function() {
     console.log('mouserover');
@@ -26,5 +26,5 @@ box.onmouseover = function() {
 }
 
 box.onmouseout = function() {
-    timer = setInterval(move, 20);
+    timer = setInterval(move, 30);
 }
