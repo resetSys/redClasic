@@ -1,0 +1,36 @@
+/* 培训联营 */
+.meng{
+    overflow: hidden;
+}
+.meng-item{
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
+.meng-item img{
+    
+}
+.meng-floor{
+    width: 100%;
+    height: 30px;
+    margin-top: 0px;
+    z-index: 100;
+    position: absolute;
+    /* absolute的宽高比是相对于第一个部位static的祖先的height/width+padding作为参考的 */
+    padding-right: 30px;
+}
+.meng-floor-item{
+    text-align: center;
+    line-height: 30px;
+    width: 100%;
+    height: 100%;
+    background: #be0108;
+    color: #ffffff;
+}
+.meng-floor-item h4{
+    margin: 0;
+    display: inline-block;
+}
+.meng-floor-item a{
+    color: rgb(56, 133, 248);
+}

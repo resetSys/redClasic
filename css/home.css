@@ -51,12 +51,17 @@ html,body{
     border-left: 2px solid #be0108;
 }
 .news-body{
+    position: relative;
+    max-height: 228px;
+    overflow: hidden;
     border-top: 2px solid #be0108;
 }
 .news-body ul{
+    position: relative;
     padding: 10px;
     line-height: 200%;
 }
+
 .news-body ul li{
     font-size: 14px;
     /* 设置不换行 */
@@ -66,4 +71,24 @@ html,body{
     overflow: hidden;
     /* 溢出显示... */
     text-overflow: ellipsis;
+}
+/* 学员心声单独显示 */
+.news-title{
+    /* 设置溢出隐藏 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* a链接的几个状态 */
+.news-title a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.news-title a:hover{
+    color: #be0108;
+}
+.news-content{
+    text-indent: 2em;
+    line-height: 180%;
 }
