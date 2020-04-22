@@ -1,2 +1,3 @@
 # redClasic
-这是一个红色经典风格的网站
+新乡教育基地自适应网站
+# Open the home page
